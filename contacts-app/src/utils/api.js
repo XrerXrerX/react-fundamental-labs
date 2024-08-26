@@ -43,7 +43,7 @@ async function register({ name, email, password }) {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ name, email, password}),
+    body: JSON.stringify({ name, email, password }),
   });
 
   const responseJson = await response.json();
@@ -113,7 +113,7 @@ async function deleteContact(id) {
   return { error: false };
 }
 
-export { 
+export {
   getAccessToken,
   putAccessToken,
   login,
@@ -121,5 +121,5 @@ export {
   getUserLogged,
   addContact,
   getContacts,
-  deleteContact 
+  deleteContact
 }
